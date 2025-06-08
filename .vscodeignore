@@ -1,0 +1,13 @@
+.vscode/
+.vscode-test/
+test/
+build/
+dist/
+
+README.dev.ja.md
+mise.toml
+
+**/*.map
+**/*.ts
+**/tsconfig.json
+**/tslint.json
