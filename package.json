@@ -23,6 +23,7 @@
   "keywords": [
     "dataform",
     "bigquery",
+    "sqlx",
     "javascript",
     "typescript",
     "tagged",
