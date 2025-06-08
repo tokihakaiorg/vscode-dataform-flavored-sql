@@ -1,7 +1,7 @@
 /**
  * List of languages
  *
- * name: Human readable indentifier for the langauge
+ * name: Human readable identifier for the langauge
  *
  * language: vscode language identifier
  *
