@@ -94,8 +94,8 @@ const getBasicGrammar = () => {
   return basicGrammar;
 };
 
-function getRepositoryName(langauge) {
-  return "commentTaggedTemplate-" + langauge.name;
+function getRepositoryName(language) {
+  return "commentTaggedTemplate-" + language.name;
 }
 
 function getBasicGrammarInjectionSelector() {
