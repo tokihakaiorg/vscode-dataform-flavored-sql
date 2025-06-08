@@ -1,13 +1,14 @@
 # Dataform flavored SQL VSCode extension
 
+[![Version](https://vsmarketplacebadges.dev/version/tokihakaiorg.dataform-flavored-sql.png?&colorB=teal)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![Installs](https://vsmarketplacebadges.dev/installs/tokihakaiorg.dataform-flavored-sql.png)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![Downloads](https://vsmarketplacebadges.dev/downloads/tokihakaiorg.dataform-flavored-sql.png)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![Rating Short](https://vsmarketplacebadges.dev/rating-short/tokihakaiorg.dataform-flavored-sql.png)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![Rating Star](https://vsmarketplacebadges.dev/rating-star/tokihakaiorg.dataform-flavored-sql.png)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql)
+
+[![TrendingDaily](https://vsmarketplacebadges.dev/trending-daily/tokihakaiorg.dataform-flavored-sql.png?&colorB=blue)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![TrendingWeekly](https://vsmarketplacebadges.dev/trending-weekly/tokihakaiorg.dataform-flavored-sql.png?&colorB=blue)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql) [![TrendingMonthly](https://vsmarketplacebadges.dev/trending-monthly/tokihakaiorg.dataform-flavored-sql.png?&colorB=blue)](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql)
+
 ## 概要
 
-<!-- TODO: Add extension links -->
+JavaScript および TypeScript のテンプレートリテラルタグ内に書かれた Dataform-flavored な SQL にシンタックスハイライトを提供する [VSCode 拡張](https://marketplace.visualstudio.com/items?itemName=tokihakaiorg.dataform-flavored-sql)です。
 
-JavaScript および TypeScript のテンプレートリテラルタグ内に書かれた Dataform-flavored な SQL にシンタックスハイライトを提供する VSCode 拡張です。
-
-<!-- TODO: Fix image links -->
-![example.png](docs/example.png)
+![example.png](https://github.com/tokihakaiorg/vscode-dataform-flavored-sql/raw/5bfb4791eb6e629dd1472657e5a2a1a28dc9ae06/docs/example.png)
 
 ## 使い方
 
