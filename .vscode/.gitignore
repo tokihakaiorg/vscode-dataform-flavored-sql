@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+# 以下のファイルはローカルで設定してください。
+# Workspace Config+ 用です。
+# (https://marketplace.visualstudio.com/items?itemName=swellaby.workspace-config-plus)
+settings.json
+settings.local.json
+launch.json
+launch.local.json
+
+!extensions.json
+!settings.shared.json
+!launch.shared.json
