@@ -12,10 +12,8 @@
 const languages = [
     // The syntax of languages listed earlier in this array takes precedence over those listed later.
     // Therefore, the order of languages in the `languages` array is important for correct syntax highlighting.
-    { name: 'js', language: 'javascript', identifiers: ['js', 'jsx', 'javascript', 'es6', 'mjs'], source: 'source.js' },
     { name: 'js_regexp', identifiers: ['regexp'], source: 'source.js.regexp' },
-    { name: 'ts', language: 'typescript', identifiers: ['typescript', 'ts'], source: 'source.ts' },
-    { name: 'tsx', language: 'typescriptreact', identifiers: ['tsx'], source: 'source.tsx' },
+    { name: 'json', language: 'json', identifiers: ['json', 'sublime-settings', 'sublime-menu', 'sublime-keymap', 'sublime-mousemap', 'sublime-theme', 'sublime-build', 'sublime-project', 'sublime-completions'], source: 'source.json' },
     { name: 'df_sql', language: 'df-sql', identifiers: ['df-sql'], source: 'source.df-sql' },
 ];
 exports.languages = languages;

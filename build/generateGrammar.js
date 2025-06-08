@@ -12,6 +12,10 @@ const targetScopes = [
   "source.js.jsx",
   "source.ts",
   "source.tsx",
+
+  // for SQLX (vscode-dataform-tools)
+  "source.sqlx meta.section.jsblock",
+  "source.sqlx meta.section.inlinejs",
 ];
 
 const basicGrammarTemplate = {

@@ -33,6 +33,9 @@
     "languages": [
       {
         "id": "df-sql",
+        "aliases": [
+          "Dataform-flavored SQL"
+        ],
         "configuration": "syntaxes/df-sql.language-configuration.json"
       }
     ],
@@ -40,7 +43,7 @@
       {
         "language": "df-sql",
         "scopeName": "source.df-sql",
-        "path": "./syntaxes/df-sql.grammar.json"
+        "path": "./syntaxes/df-sql.tmLanguage.json"
       },
       {
         "injectTo": [
@@ -51,14 +54,13 @@
           "source.jsx",
           "source.ts",
           "source.tsx",
-          "text.html.markdown"
+          "text.html.markdown",
+          "source.sqlx"
         ],
         "scopeName": "inline.template-tagged-languages",
         "path": "./syntaxes/grammar.json",
         "embeddedLanguages": {
-          "meta.embedded.block.js": "javascript",
-          "meta.embedded.block.ts": "typescript",
-          "meta.embedded.block.tsx": "typescriptreact",
+          "meta.embedded.block.json": "json",
           "meta.embedded.block.df_sql": "df-sql"
         }
       },
@@ -71,7 +73,8 @@
           "source.jsx",
           "source.ts",
           "source.tsx",
-          "text.html.markdown"
+          "text.html.markdown",
+          "source.sqlx"
         ],
         "scopeName": "inline.template-tagged-languages.reinjection",
         "path": "./syntaxes/reinject-grammar.json",

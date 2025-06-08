@@ -1,9 +1,9 @@
 {
   "fileTypes": [],
-  "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.cjs -comment -(string - meta.embedded), L:source.mjs -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded), L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
+  "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.cjs -comment -(string - meta.embedded), L:source.mjs -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded), L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded), L:source.sqlx meta.section.jsblock -comment -(string - meta.embedded), L:source.sqlx meta.section.inlinejs -comment -(string - meta.embedded)",
   "patterns": [
     {
-      "begin": "(?i)(/)(?=(\\*\\s*\\b(?:js|jsx|javascript|es6|mjs|regexp|typescript|ts|tsx|df\\-sql)\\b\\s*\\*/)\\s*`)",
+      "begin": "(?i)(/)(?=(\\*\\s*\\b(?:regexp|json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions|df\\-sql)\\b\\s*\\*/)\\s*`)",
       "beginCaptures": {
         "1": {
           "name": "comment.block.ts"
@@ -20,16 +20,10 @@
       },
       "patterns": [
         {
-          "include": "#commentTaggedTemplate-js"
-        },
-        {
           "include": "#commentTaggedTemplate-js_regexp"
         },
         {
-          "include": "#commentTaggedTemplate-ts"
-        },
-        {
-          "include": "#commentTaggedTemplate-tsx"
+          "include": "#commentTaggedTemplate-json"
         },
         {
           "include": "#commentTaggedTemplate-df_sql"
@@ -39,28 +33,6 @@
   ],
   "scopeName": "inline.template-tagged-languages",
   "repository": {
-    "commentTaggedTemplate-js": {
-      "name": "string.js.taggedTemplate.commentTaggedTemplate.js",
-      "contentName": "meta.embedded.block.js",
-      "begin": "(?i)(\\*\\s*\\b(?:js|jsx|javascript|es6|mjs)\\b\\s*\\*/)\\s*(`)",
-      "beginCaptures": {
-        "1": {
-          "name": "comment.block.ts"
-        },
-        "2": {
-          "name": "punctuation.definition.string.template.begin.js"
-        }
-      },
-      "end": "(?=`)",
-      "patterns": [
-        {
-          "include": "source.js"
-        },
-        {
-          "match": "."
-        }
-      ]
-    },
     "commentTaggedTemplate-js_regexp": {
       "name": "string.js.taggedTemplate.commentTaggedTemplate.js_regexp",
       "contentName": "meta.embedded.block.js_regexp",
@@ -83,10 +55,10 @@
         }
       ]
     },
-    "commentTaggedTemplate-ts": {
-      "name": "string.js.taggedTemplate.commentTaggedTemplate.ts",
-      "contentName": "meta.embedded.block.ts",
-      "begin": "(?i)(\\*\\s*\\b(?:typescript|ts)\\b\\s*\\*/)\\s*(`)",
+    "commentTaggedTemplate-json": {
+      "name": "string.js.taggedTemplate.commentTaggedTemplate.json",
+      "contentName": "meta.embedded.block.json",
+      "begin": "(?i)(\\*\\s*\\b(?:json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions)\\b\\s*\\*/)\\s*(`)",
       "beginCaptures": {
         "1": {
           "name": "comment.block.ts"
@@ -98,29 +70,7 @@
       "end": "(?=`)",
       "patterns": [
         {
-          "include": "source.ts"
-        },
-        {
-          "match": "."
-        }
-      ]
-    },
-    "commentTaggedTemplate-tsx": {
-      "name": "string.js.taggedTemplate.commentTaggedTemplate.tsx",
-      "contentName": "meta.embedded.block.tsx",
-      "begin": "(?i)(\\*\\s*\\b(?:tsx)\\b\\s*\\*/)\\s*(`)",
-      "beginCaptures": {
-        "1": {
-          "name": "comment.block.ts"
-        },
-        "2": {
-          "name": "punctuation.definition.string.template.begin.js"
-        }
-      },
-      "end": "(?=`)",
-      "patterns": [
-        {
-          "include": "source.tsx"
+          "include": "source.json"
         },
         {
           "match": "."
