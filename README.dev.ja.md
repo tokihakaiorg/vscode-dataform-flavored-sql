@@ -86,7 +86,26 @@ npx -y vsce show bierner.comment-tagged-templates --json
 例として version 0.3.3 をダウンロードするには以下のコマンドを実行します。
 
 ```sh
-curl -L -o bierner.comment-tagged-templates.0.3.3.zip 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/bierner/vsextensions/comment-tagged-templates/0.3.3/vspackage'
+curl -L -o bierner.comment-tagged-templates.0.3.3.vsix.gz 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/bierner/vsextensions/comment-tagged-templates/0.3.3/vspackage'
+gunzip bierner.comment-tagged-templates.0.3.3.vsix.gz
+```
+
+VSIX をそのまま VSCode にインストールする場合は以下のコマンドを実行します。
+
+```sh
+code --install-extension bierner.comment-tagged-templates.0.3.3.vsix
+```
+
+VSIX の内容を確認する場合は、以下のコマンドを実行します。
+
+```sh
+unzip -l bierner.comment-tagged-templates.0.3.3.vsix
+```
+
+VSIX を展開する場合は以下のコマンドを実行します。
+
+```sh
+unzip bierner.comment-tagged-templates.0.3.3.vsix -d bierner.comment-tagged-templates.0.3.3
 ```
 
 ## （参考） シンタックスハイライト機能の開発詳細
