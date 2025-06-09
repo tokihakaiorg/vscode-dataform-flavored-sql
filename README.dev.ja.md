@@ -67,6 +67,10 @@ SQLX には、 config や js のブロックと、それに含まれない SQL �
 
 ## （参考） 配布されている VSCode 拡張をダウンロードする方法
 
+インストールしているバージョンであれば VSCode 上から GUI で内容を確認できます。VSCode で拡張の詳細を開くと「Installation」の「Size」フィールドの値がローカルディレクトリへのリンクになっています。
+
+![show-vsix-content](docs.dev/show-vsix-content.png)
+
 インストール前のパッケージであれば [VSCode 上から GUI でダウンロードできます](https://kuranabe.hatenablog.com/entry/2025/03/11/201224)。
 
 例として、 [comment-tagged-templates](https://marketplace.visualstudio.com/items?itemName=bierner.comment-tagged-templates) をダウンロードする方法を説明します。
@@ -76,7 +80,7 @@ comment-tagged-templates は publisher が bierner なので、識別子は `bie
 利用可能なバージョンは以下のコマンドで一覧できます。
 
 ```sh
-pnpm dlx vsce show bierner.comment-tagged-templates --json | jq
+npx -y vsce show bierner.comment-tagged-templates --json
 ```
 
 例として version 0.3.3 をダウンロードするには以下のコマンドを実行します。

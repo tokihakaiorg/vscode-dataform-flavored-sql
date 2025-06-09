@@ -3,7 +3,7 @@
   "displayName": "Dataform flavored SQL",
   "description": "VS Code extension that provides Dataform flavored SQL definition with syntax highlighting in JS and TS tagged template",
   "publisher": "tokihakaiorg",
-  "version": "0.0.0-beta.0",
+  "version": "0.0.0",
   "repository": {
     "url": "https://github.com/tokihakaiorg/vscode-dataform-flavored-sql.git"
   },
