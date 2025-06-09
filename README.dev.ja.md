@@ -86,8 +86,7 @@ npx -y vsce show bierner.comment-tagged-templates --json
 例として version 0.3.3 をダウンロードするには以下のコマンドを実行します。
 
 ```sh
-curl -L -o bierner.comment-tagged-templates.0.3.3.vsix.gz 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/bierner/vsextensions/comment-tagged-templates/0.3.3/vspackage'
-gunzip bierner.comment-tagged-templates.0.3.3.vsix.gz
+curl -L -o bierner.comment-tagged-templates.0.3.3.vsix.gz 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/bierner/vsextensions/comment-tagged-templates/0.3.3/vspackage' && gunzip bierner.comment-tagged-templates.0.3.3.vsix.gz
 ```
 
 VSIX をそのまま VSCode にインストールする場合は以下のコマンドを実行します。
